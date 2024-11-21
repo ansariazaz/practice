@@ -2,11 +2,13 @@
     --bg-color:#ffffff;
     --text-color:#000000;
     --heading-color:#444444;
+    --border:#444444;
 }
 [data-theme="dark"]{
     --bg-color:#000000;
     --text-color:#ffffff;
     --heading-color:#dddddd;
+    --border:#dddddd;
 }
 body{
     margin: 0;
@@ -14,6 +16,19 @@ body{
     box-sizing: border-box;
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+.container{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.homePage{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head{
+    text-align: center;
 }
 h1{
     color: var(--heading-color);
@@ -23,6 +38,12 @@ ul{
   display: flex;
 }
 ul li a{
+    text-decoration: none;
+    margin-left: 12px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+a{
     text-decoration: none;
     margin-left: 12px;
     cursor: pointer;
